@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Escape</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <  <!-- Main Menu Screen -->
+  <div id="main-menu-screen" class="screen active">
+    <div class="title-card">Cyber Escape</div>
+    <button id="play-button" class="menu-button">Play</button>
+    <button id="shop-button" class="menu-button">Shop</button>
+    <button id="mute-button" class="menu-button">Mute</button>
+  </div>
+
+  <!-- Shop Screen -->
+  <div id="shop-screen" class="screen">
+    <h2>Shop</h2>
+    <div class="cyber-coins-display"></div> <!-- Add this line -->
+    <div class="shop-tabs">
+      <button class="tab-button active" data-tab="upgrades">Upgrades</button>
+      <button class="tab-button" data-tab="cosmetics">Cosmetics</button>
+    </div>
+    <div id="upgrades-tab" class="tab-content active">
+      <h3>Upgrades</h3>
+      <div id="upgrade-items">
+        <!-- Add upgrade items here -->
+      </div>
+    </div>
+    <div id="cosmetics-tab" class="tab-content">
+      <h3>Cosmetics</h3>
+      <div id="cosmetic-items">
+        <!-- Add cosmetic items here -->
+      </div>
+    </div>
+    <button id="back-to-menu-button">Back to Menu</button>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="game-over-screen" class="screen">
+    <h2>Game Over</h2>
+    <p>Your Score: <span id="final-score">0</span></p>
+    <button id="to-main-menu-button">Main Menu</button>
+  </div>
+
+  <!-- Victory Screen -->
+  <div id="victory-screen" class="screen">
+    <h2>Level Complete!</h2>
+    <p>Your Score: <span id="victory-score">0</span></p>
+    <button id="next-level-button">Next Level</button>
+    <button id="victory-to-main-menu-button">Main Menu</button>
+  </div>
+
+  <!-- Game Completed Screen -->
+  <div id="game-completed-screen" class="screen">
+    <h2>Congratulations!</h2>
+    <p>You completed all levels!</p>
+    <button id="completed-to-main-menu-button">Main Menu</button>
+  </div>
+
+  <!-- Pause Screen -->
+  <div id="pause-screen" class="screen">
+    <h2>Game Paused</h2>
+    <button id="resume-button">Resume</button>
+    <button id="quit-button">Quit</button>
+  </div>
+
+  <!-- Score Display -->
+  <div id="game-info">
+    <div id="score-display"></div>
+    <div id="money-display"></div>
+  </div>
+
+  <!-- Pause Button -->
+  <button id="pause-button">Pause</button>
+
+  <!-- Game Canvas -->
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- JavaScript Logic -->
+  <script src="js/script.js"></script>
+</body>
+</html>
